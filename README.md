@@ -1,46 +1,102 @@
-# Imags_AI
-〜ライブラリとインストールコマンド〜
-１. OpenCV
-機能: 画像処理、顔の検出、矩形の描画など
-・コマンド
-pip install opencv-python
+~ライブラリ~
 
-2. dlib
-機能: 高精度の顔検出、顔ランドマーク検出
-・コマンド
-pip install dlib
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+[顔認識＿感情数値化]
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Open CV
+    機能: 画像処理、顔の検出、矩形の描画など
+    •	cv2.imread: 画像の読み込み
+	•	cv2.rectangle: 顔の周りに矩形を描画
+	•	cv2.imshow、cv2.waitKey、cv2.destroyAllWindows: 画像表示関連
+#pip install opencv-python
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+•dlib
+    機能: 高精度の顔検出、顔ランドマーク検出
+    •	face_recognition.face_locations: 顔の位置を検出
+#pip install dlib
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・face_recognition
+    機能: 顔認識、顔の位置特定
+    •	face_recognition.load_image_file: 画像ファイルの読み込み
+	•	face_recognition.face_locations: 顔の位置を検出
+#pip install face_recognition
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・DeepFace
+    機能: 顔認識、感情認識
+    •	DeepFace.analyze: 顔の感情認識
+#pip install deepface
 
-3. face_recognition
-機能: 顔認識、顔の位置特
-・コマンド
-pip install face_recognition
 
-4. TensorFlow
-機能: 画像認識モデル（例：MobileNetV2）の利用
-・コマンド
-pip install tensorflow
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+[画像認識]
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Open CV
+    機能: 画像処理、顔の検出、矩形の描画など
+    •	cv2.imread: 画像の読み込み
+    •	cv2.imshow、cv2.waitKey、cv2.destroyAllWindows: 画像表示関連
+#pip install opencv-python
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・TensorFlow
+    機能: 画像認識モデル（例：MobileNetV2）の利用
+    •	MobileNetV2: 画像認識モデルのロード
+	•	model.predict: 画像認識の実行
+#pip install tensorflow
 
-5. Flask
-機能: Webフレームワーク、対話型AIのAPIサーバー
-・コマンド
-pip install flask
 
-6. DeepFace
-機能: 顔認識、感情認識
-・コマンド
-pip install deepface
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+[画像検索]
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Requests
+    機能: HTTPリクエストを送信するためのライブラリ。画像データを含むPOSTリクエストを送信するのに適しています。
+＃pip install requests
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Pillow
+    機能: 画像の処理と変換。Pillowを使って画像を読み込み、必要に応じてフォーマットを変更できます。
+#pip install pillow
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Flask
+    機能: Webフレームワーク。画像検索のためのWeb APIを構築するのに使います。
+    Flask, request, jsonify: Web APIの構築
+#pip install flask
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・BeautifulSoup
+    機能: HTMLの解析。Web検索結果を解析するのに便利です。
+#pip install beautifulsoup4
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Selenium (オプション)
+    機能: Webブラウザの自動化。Google画像検索など、特定のサイトでの検索を自動化するのに便利です。
+#pip install selenium
 
-7. SpeechRecognition
-機能: 音声認識
-・コマンド
-pip install SpeechRecognition
 
-8. gTTS (Google Text-to-Speech)
-機能: テキストを音声に変換
-・コマンド
-pip install gtts
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+[対話型インターフェース]
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Flask
+    機能: Webフレームワーク、対話型AIのAPIサーバー
+#pip install flask
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・SpeechRecognition
+    機能: 音声認識
+    •	sr.Recognizer, sr.Microphone, recognizer.listen, recognizer.recognize_google: 音声認識
+#pip install SpeechRecognition
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・gTTS (Google Text-to-Speech)
+    機能: テキストを音声に変換
+    •	gTTS: テキストを音声に変換
+	•	tts.save: 音声ファイルの保存
+#pip install gtts
 
-9. その他（mpg321）
-機能: 音声ファイルの再生（Linux）
-・コマンド
-sudo apt-get install mpg321
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+[音声による感情の数値化]
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+・Empath
+    機能：
+    1.	感情解析: 音声から感情を解析し、喜び、怒り、悲しみ、平常の4つの感情をリアルタイムで識別します。
+	2.	ストレスチェック: ストレスレベルを評価し、話し手の心理状態を把握します。
+	3.	モニタリング: コールセンターなどの業務で、オペレーターの感情状態をモニタリングし、適切な対応を支援します。
+	4.	ダッシュボード: データを視覚化し、管理者が感情データを簡単に確認できるようにします。
+＃pip install requests
+
+APIトークンを公式サイトで取得する必要あり
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
